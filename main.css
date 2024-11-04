@@ -1,0 +1,447 @@
+.body {
+	user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	/*background-image: url("images/background-2.png");
+	background-repeat: no-repeat;
+	background-size: 100%;*/
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+}
+.sectionLeft {
+	float: left;
+	width: 76%;
+	height: 100%;
+	background-image: url("images/background-4.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0 0 240px black inset,
+				0 0 240px black inset;
+}
+.sectionRight {
+	position: relative;
+	float: right;
+	width: 20%;
+	height: 100vh;
+	padding: 0px 30px 0px 30px;
+	background-image: url("images/background-1.jpg");
+	box-shadow: 0 0 80px black inset,
+				0 0 80px black inset
+				0 0 20px 2px black;
+	color: white;
+	outline: solid black 4px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+.sectionRightOtsikot {
+	color: white;
+	font-size: 18px;
+	text-shadow: 0px 0px 6px black,
+				 0px 0px 6px black,  
+				 0px 0px 6px black,  
+				 0px 0px 6px black,  
+				 0px 0px 6px black;
+}
+.innerSectionLeft {
+	position: relative;
+	width: 50%;
+    height: 100%;
+    float: right;
+    right: 20%;
+    margin: auto;
+	background-image: url("images/background-6.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	outline: solid black 5px;
+	box-shadow: 0 0 80px black inset;
+}
+.scoreContainer {
+	position: relative;
+	width: 240px;;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 18px;
+	font-weight: bold;
+	left: 25%;
+	text-align: center;
+	color: white;
+	text-shadow: 0px 0px 1px white;
+}
+#clicker {
+	height: 240px;
+	width: 240px;
+	border-radius: 120px;
+	position: relative;
+    float: right;
+    right: 32%;
+	top: 5%;
+	background-image: url("images/pääraha-1.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#clicker:hover {
+	transform: scale(1.05);
+}
+#clicker:active {
+	transform: scale(0.95);
+}
+#clicker > .number {
+	z-index: 99;
+	font-size: 24px;
+	color: white;
+	position: absolute;
+}
+.clickerCounter {
+	position: relative;
+	text-align: center;
+	left: 13%;
+}
+.otsikkoContainer {
+	top: 0;
+	line-height: 1px;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	color: white;
+}
+#otsikko {
+	font-size: 60px;
+	font-family: 'Times New Roman', Times, serif;
+	text-shadow: 0 0 2px white;
+	padding-left: 15px;
+}
+#alaotsikko {
+	font-size: 15px;
+	font-weight: lighter;
+}
+#moneesi {
+	font-size: 35px;
+}
+#shopContainer {
+	outline: solid black 1px;
+	width: 303px;
+	min-height: 80px;
+	height: 350px;
+	background-color: #3a3939;
+	overflow-y: visible;
+	overflow-x: hidden;
+	box-shadow: 0px 0px 8px 4px #000000,
+				0px 0px 10px white inset;
+	padding: 2px 2px 2px 2px;
+}
+.rakennusnappi {
+	position: relative;
+	outline: solid black 3px;
+	width: 298px;
+	max-height: 55px;
+	margin: 2px 2px 2px 2px;
+	background-color: #FFFFFF;
+    opacity: 100%;
+	background-image: url("images/background-2.png");
+	color: white;
+	text-shadow: 0px 0px 8px black, 
+				 0px 0px 8px black, 
+				 0px 0px 8px black;
+	box-shadow: 0 0 60px black inset;
+}
+.rakennusnappi:hover {
+	transform: scale(0.95);
+	background-color: #f2f2f2;
+}
+.rakennusnappi:active {
+	transform: scale(1.0);
+}
+.rakennusnappi-unaffordable {
+	position: relative;
+	outline: solid black 3px;
+	width: 298px;
+	max-height: 55px;
+	margin: 2px 2px 2px 2px;
+	background-color: #FFFFFF;
+    opacity: 100%;
+	background-image: url("images/background-2.png");
+	color: white;
+	text-shadow: 0px 0px 8px black, 
+				 0px 0px 8px black, 
+				 0px 0px 8px black;
+	box-shadow: 0 0 60px black inset,
+				0 0 60px black inset;
+	opacity: 0.4;
+	transform: scale(0.95);
+}
+.rakennusnappi-unaffordable:hover {
+	transform: scale(0.97);
+}
+.rakennusnappi-locked {
+	position: relative;
+	outline: solid black 3px;
+	width: 298px;
+	max-height: 55px;
+	margin: 2px 2px 2px 2px;
+	background-color: #FFFFFF;
+    opacity: 100%;
+	background-color: #3a3939;
+	color: white;
+	text-shadow: 0px 0px 8px black, 
+				 0px 0px 8px black, 
+				 0px 0px 8px black;
+	box-shadow: 0 0 60px black inset;
+}
+.rakennusnappi-locked:hover {
+	transform: scale(0.95);
+}
+#ostettuUpgrade {
+	outline: solid black 1px;
+	height: 15px;
+	width: 15px;
+	box-shadow: 0px 0px 6px black inset;
+}
+#ostettuUpgrade img {
+	color: white;
+}
+#upgradeContainer {
+	min-height: 75px;
+	height: 75px;
+	width: 302px;
+	outline: solid black 1px;
+	background-color: #3a3939;
+	box-shadow: 0px 0px 8px 4px black,
+				0 0 10px white inset;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+.upgrade {
+	position: relative;
+	height: 67px;
+	width: 67px;
+	outline: solid black 3px;
+	float: left;
+    margin: 4px;
+	box-shadow: 0px 0px 10px white inset;
+}
+.upgrade:hover {
+	transform: scale(0.95);
+    transition: ease-in-out(0.1s);
+}
+.upgrade:active {
+	transform: scale(1.05);
+}
+.upgrade-unaffordable {
+	position: relative;
+	height: 69px;
+	width: 69px;
+	outline: solid black 3px;
+	float: left;
+    margin: 4px;
+	box-shadow: 0px 0px 10px white inset;
+	opacity: 0.6;
+}
+.upgrade-unaffordable:hover {
+	transform: scale(0.95);
+    transition: ease-in-out(0.1s);
+}
+.outer-building-määrä {
+	width: 30px;
+	height: 45px;
+}
+.building-määrä {
+	float: right;
+	margin: 15px;
+	left: 0px;
+	font-size: 30px;
+	text-shadow: 0px 0px 8px black, 
+				 0px 0px 8px black, 
+				 0px 0px 12px white, 
+				 0px 0px 12px white, 
+				 0px 0px 12px white, 
+				 0px 0px 12px white, 
+				 0px 0px 2px black, 
+				 0px 0px 2px black;
+}
+.building-kerroin {
+	float: right;
+	font-size: 20px;
+	text-shadow: 0px 0px 8px black, 
+				 0px 0px 8px black, 
+				 0px 0px 12px black,
+				  0px 0px 12px black,
+				   0px 0px 12px black, 
+				   0px 0px 12px black, 
+				   0px 0px 2px black, 
+				   0px 0px 2px black;
+}
+#image {
+	width: 10px;
+	height: 10px;
+}
+.building-nimiJaHinta {
+	width: 170px;
+}
+.building-nimi {
+	font-weight: bold;
+	font-size: 16px;
+}
+.building-hinta {
+	float: left;
+	margin-bottom: 5px;
+}
+.building-kuva {
+    height: 66px;
+    width: 66px;
+}
+/*#unscrollable {
+	display: flex;
+	overflow: hidden;
+}
+#scrollable {
+	display: flex;
+	overflow-y: auto;
+	overflow-x: hidden;
+}*/
+.napukat {
+    position: relative;
+    top: 0;
+	color: white;
+}
+#ostonappi-upgrade-image img {
+	font-size: 20px;
+	height: 20px;
+	width: 20px;
+	float: right;
+}
+#ostettuUpgrade img {
+	height: 10px;
+	width: 10px;
+}
+.click-numero {
+	text-shadow: 0 0 16px black,
+				 0 0 16px black;
+}
+#testiDIV {
+	visibility: visible;
+}
+.uhkapelaus {
+	visibility: visible;
+}
+#innerUhkapelaus {
+	position: relative;
+	height: 0px;
+	left: 95px;
+	width: 150px;
+	visibility: hidden;
+}
+#huijaukset {
+	padding-left: 4px;
+}
+.uhkapelausnapit {
+	position: relative;
+	color: white;
+	text-align: center;
+	float: left;
+}
+#voitot {
+	max-height: 400px;
+	float: left;
+	position: relative;
+	overflow-y: scroll;
+	color: white;
+}
+.pelinappi {
+	float: left;
+	font-size: 20px;
+}
+#tulos {
+	text-align: left;
+	color: white;
+	position: relative;
+}
+.click-kuva {
+	height: 10px;
+	width: 10px;
+	background-image: url("images/kolikko-1.png");
+}
+#huijaus {
+	color: white;
+	position: relative;
+	visibility: hidden;
+	height: 0px;
+}
+#innerHuijaus {
+	position: relative;
+	left: 10px;
+	visibility: hidden;
+	height: 0px;
+	width: auto;
+	width: 320px;
+}
+#essential {
+	visibility: hidden;
+	height: 0px;
+}
+.sectionLeftRight {
+	left: 940px;
+	position: absolute;
+	width: 225px;
+	height: 100%;
+	color: white;
+}
+#credits {
+	font-size: 8px;
+}
+#menu {
+	height: 0px;
+	visibility: hidden;
+	padding-left: 10px;
+}
+#version {
+	font-size: 10px;
+}
+#menuButton {
+	width: 225px;
+}
+.leftButton {
+	width: 345px;
+	border: none;
+	background: none;
+	color: white;
+	text-shadow: 0px 0px 8px black, 
+				 0px 0px 8px black,
+				 0px 0px 8px black,
+				 0px 0px 8px black, 
+				 0px 0px 12px black,
+				 0px 0px 12px black,
+				 0px 0px 12px black, 
+				 0px 0px 12px black, 
+				 0px 0px 2px black, 
+				 0px 0px 2px black;
+}
+.pm {
+	border: none;
+	background: none;
+	color: white;
+	text-shadow: 0px 0px 8px black, 
+				 0px 0px 8px black,
+				 0px 0px 8px black,
+				 0px 0px 8px black, 
+				 0px 0px 12px black,
+				 0px 0px 12px black,
+				 0px 0px 12px black, 
+				 0px 0px 12px black, 
+				 0px 0px 2px black, 
+				 0px 0px 2px black;
+}
+.leftButton:hover {
+	transform: scale(1.1);
+}
+.leftButton:active {
+	transform: scale(1.05);
+}
+.pm:hover {
+	transform: scale(1.1);
+}
+.pm:active {
+	transform: scale(1.05);
+}

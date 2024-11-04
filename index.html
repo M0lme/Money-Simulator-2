@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="main.css">
+		<title>Money Simulator 2</title>
+	<head>
+
+	<body class="body">
+		<div class="sectionLeft" id="unscrollable">
+			<div class="innerSectionLeft">
+	
+				<div class="otsikkoContainer">
+					<h1 id="otsikko">Money Simulator 2 <span id="version">0.000</span></h1>
+					<h2 id="credits">by Molme</h2>
+					<h3 id="alaotsikko">Money Simulator 1 tulossa pian...</h3>
+				</div>
+			
+				<div class="scoreContainer">
+					<p>moneesit: <span id="game.moneesi">0</span></p>
+					<p>	<span id="game.moneesiPerSecond">0</span> /s -<span id="veroprosentti"></span>%</p>
+				</div>
+
+				<div draggable="false" id="clicker"></div>
+			</div>
+				<diV id="huijaus">
+					<div id="avausnappi2"><button onClick="display.toggleHuijausOn();" class="leftButton">Huijaa [+]</button></div>
+					<div id="innerHuijaus">
+						<button onClick="cheat.switch();">↓</button><button onClick="cheat.add();">[+]</button><button onClick="cheat.deduct();">[-]</button><br>
+						<button onClick="cheat.cheat();">huijaa</button><br>
+						<button onClick="luoKuva();">luo kuva</button><br>
+							<div id="essential"><div id="rahaClicked">0</div>
+							<div id="topScore">0</div></div>
+							<div id="huijaukset"></div>
+					</div>
+				</diV>
+
+				<div class="uhkapelaus">
+					<div id="avausnappi1"><button onClick="uhkapelaus.avaaUhkapelaus()">1000 <br> avaa uhkapelaus</button></div>
+					<div id="innerUhkapelaus">
+						<div class="uhkapelausnapit">
+							<P>Uhkapelaus</P>
+							tulot  <span id="profit">0</span>
+								<br>
+							<button onClick="uhkapelaus.kasvataKerroin()">+</button>
+							kerroin <span id="kerroin">10</span>x, <button onClick="uhkapelaus.vähennäKerroin()">-</button>todennäköisyys 1/<span id="kerroin2">10</span>
+								<br>
+							<button onClick="uhkapelaus.allIn()">ALL INNN</button>
+							<button onClick="uhkapelaus.allOut()">ALL OUTT</button>
+								<br>
+							<button onClick="uhkapelaus.kasvataBet()">+</button>
+							<span id="bet">1000</span>
+							<button onClick="uhkapelaus.vähennäBet()">-</button>
+								<br>
+						</div>
+						<button onClick="uhkapelaus.pelaa()" class="pelinappi" id="pelinappi">pelaa</button>
+							<br>
+							<br>
+						<span id="tulos">tulos</span>
+							<br>
+							<br>
+						<span id="voitot"></span>
+					</div>
+				</diV>
+		</div>
+
+		<diV class="sectionLeftRight">
+			<div id="showMenuButton"><button onClick="display.showMenu();" id="menuButton" class="pm">MENU [+]</button></div>
+			<div id="menu">
+				<div class="napukat">
+					<input type="text" id="myInput" />
+					<button onClick="saveGame();">Tallenna</button><br>
+					<button onClick="resetGame();">Aloita alusta</button><br>
+				</div>
+			</div>
+		</diV>
+
+		<div class="sectionRight">
+			<div id="ostettuUpgrade"></div>
+			<p class="sectionRightOtsikot">Päivitykset <span id="showUpgradesButton" class="pm"><button onClick="display.showUpgrades();" class="pm">[+]</button></span></p>
+			<div id="upgradeContainer">
+			</div>
+			<p class="sectionRightOtsikot">Rakennukset <span id="showBuildingsButton" class="pm"><button onClick="display.showBuildings();" class="pm">[+]</button></span></p>
+			<div id="shopContainer">
+			</div>
+		</div>
+	</body>
+
+<script src="main.js"></script>
+
+</html>

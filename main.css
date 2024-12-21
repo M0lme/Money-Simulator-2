@@ -1,0 +1,1116 @@
+#dummy {
+	position: absolute;
+	visibility: hidden;
+	height: 0px;
+	width: 0px;
+	z-index: 0;
+}
+#body {
+	user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	/*background-image: url("images/background-2.png");
+	background-repeat: no-repeat;
+	background-size: 100%;*/
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+#sectionLeft {
+	float: left;
+	width: 76%;
+	height: 100%;
+	background-image: url("images/background-4.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0 0 160px black inset,
+				0 0 160px black inset;
+}
+#sectionRight {
+	position: relative;
+	float: right;
+	width: 24%;
+	height: 100%;
+	background-image: url("images/background-1.jpg");
+	background-size: 100% 30%;
+	background-color: rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 30px 2px black inset,
+				0 0 20px black;
+	color: white;
+	outline: solid black 4px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+#innerSectionRight {
+	width: 84%;
+	float: right;
+	padding: 0px 8% 0px 8%;
+}
+.sectionRightOtsikot {
+	color: white;
+	font-size: 25px;
+	text-shadow: 0px 0px 6px black,
+				 0px 0px 6px black,  
+				 0px 0px 6px black,  
+				 0px 0px 6px black,  
+				 0px 0px 6px black;
+	margin: 5% 5% 5% 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+
+}
+#innerSectionLeft {
+	position: relative;
+	width: 50%;
+    height: 100%;
+    float: right;
+    right: 20%;
+    margin: auto;
+	background-image: url("images/background-6.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	outline: solid black 5px;
+	box-shadow: 0 0 80px black inset,
+				0 0 200px black;
+}
+#scoreContainer {
+	position: relative;
+	width: 40%;
+	padding: 2%;
+	border-radius: 10px;
+	font-size: 100%;
+	font-weight: bold;
+	left: 25%;
+	text-align: center;
+	color: white;
+	text-shadow: 0px 0px 1px white;
+}
+#clicker {
+	height: 250px;
+	width: 250px;
+	border-radius: 100%;
+	position: relative;
+    float: right;
+    right: 29%;
+	top: 5%;
+	background-image: url("images/pääraha-1.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+				0 0 40px black inset;
+}
+#clicker:hover {
+	transform: scale(1.05);
+}
+#clicker:active {
+	transform: scale(0.95);
+}
+#clicker > .number {
+	z-index: 99;
+	font-size: 24px;
+	color: white;
+	position: absolute;
+	text-shadow: 0 0 3px black,
+				 0 0 3px black,
+				 0 0 3px black;
+}
+#otsikkoContainer {
+	top: 0;
+	line-height: 2%;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	color: white;
+}
+#otsikko {
+	font-size: 360%;
+	font-family: 'Times New Roman', Times, serif;
+	text-shadow: 0 0 2px white;
+	padding-left: 3%;
+}
+#alaotsikko {
+	font-size: 90%;
+	font-weight: lighter;
+}
+#moneesi {
+	font-size: 150%;
+}
+#shopContainer {
+	outline: solid black 1px;
+	width: 99%;
+	min-height: 80px;
+	height: 70%;
+	background-color: black;
+	overflow-y: visible;
+	overflow-x: hidden;
+	box-shadow: 0px 0px 15px 3px black,
+				0px 0px 10px black inset;
+	padding: 0.5%;
+}
+.buildingButton {
+	position: relative;
+	outline: solid black 3px;
+	width: 99%;
+	max-height: 30%;
+	margin: 0.9% 0.5% 0.9% 0.5%;
+	background-color: #FFFFFF;
+    opacity: 100%;
+	background-image: url("images/background-2.png");
+	background-image: contain;
+	color: white;
+	text-shadow: 0px 0px 8px black, 
+				 0px 0px 8px black, 
+				 0px 0px 8px black;
+	box-shadow: 0 0 60px black inset,
+				0 0 3px green inset;
+}
+.buildingButton:hover {
+	z-index: 70;
+	box-shadow: 0 0 10px black inset;
+	outline: solid grey 3px;
+}
+.buildingButton:active {
+	z-index: 70;
+	outline: solid white 2px;
+}
+.buildingButton-unaffordable {
+	opacity: 0.4;
+	box-shadow: 0 0 100px black inset;
+	box-shadow: 0 0 60px black inset,
+				0 0 6px red inset;
+}
+.buildingButton-locked {
+	background-image: url("images/background-14.png");
+	box-shadow: 0 0 100px black inset;
+}
+#upgradeContainer {
+	min-height: 79px;
+	height: 79px;
+	width: 99.5%;
+	outline: solid black 1px;
+	background-color: rgba(30, 30, 30, 1);
+	box-shadow: 0px 0px 8px 4px black,
+				0 0 20px black inset;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+.upgrade {
+	position: relative;
+	height: 69px;
+	width: 69px;
+	outline: solid black 3px;
+	float: left;
+    margin: 4px;
+	box-shadow: 0 0 20px black inset,
+				0 0 3px green inset;
+	background-color: #6b6e57;
+	background-image: url("images/background-7.png");
+	background-size: 90% 90%;
+}
+.upgrade-unaffordable {
+	opacity: 0.4;
+	box-shadow: 0 0 20px black inset,
+				0 0 3px red inset;
+}
+.upgrade:hover {
+	box-shadow: 0 0 0px white inset;
+}
+.upgrade:active {
+	outline: solid white 3px;
+}
+.outer-building-amount {
+	width: 30px;
+	height: 45px;
+}
+.building-amount {
+	position: absolute;
+	right: 20px;
+	bottom: 7px;
+	font-size: 35px;
+	text-shadow: 0px 0px 8px black, 
+				 0px 0px 8px black, 
+				 0px 0px 8px black,
+				 0px 0px 8px black,
+				 0px 0px 12px black, 
+				 0px 0px 2px black, 
+				 0px 0px 2px black,
+				 0px 0px 2px black,
+				 0px 0px 2px black;
+}
+.building-factor {
+	position: absolute;
+	right: 20px;
+	top: 15px;
+	font-size: 18px;
+	text-shadow: 0px 0px 8px black, 
+				 0px 0px 8px black, 
+				 0px 0px 12px black,
+				  0px 0px 12px black,
+				   0px 0px 12px black, 
+				   0px 0px 12px black, 
+				   0px 0px 2px black, 
+				   0px 0px 2px black;
+}
+#image {
+	width: 10px;
+	height: 10px;
+}
+.building-nameAndCost {
+	width: 170px;
+}
+.building-name {
+	font-weight: bold;
+	font-size: 16px;
+	text-shadow: 0px 0px 8px black, 
+				 0px 0px 8px black, 
+				 0px 0px 12px black,
+				  0px 0px 12px black,
+				   0px 0px 12px black, 
+				   0px 0px 12px black, 
+				   0px 0px 2px black, 
+				   0px 0px 2px black;
+}
+.building-cost {
+	float: left;
+	margin-bottom: 5px;
+	text-shadow: 0px 0px 8px black, 
+				 0px 0px 8px black, 
+				 0px 0px 12px black,
+				  0px 0px 12px black,
+				   0px 0px 12px black, 
+				   0px 0px 12px black, 
+				   0px 0px 2px black, 
+				   0px 0px 2px black;
+}
+.building-cost-unaffordable {
+	color: red;
+}
+.building-kuva {
+    height: 60px;
+    width: 60px;
+}
+/*#unscrollable {
+	display: flex;
+	overflow: hidden;
+}
+#scrollable {
+	display: flex;
+	overflow-y: auto;
+	overflow-x: hidden;
+}*/
+.napukat {
+    position: relative;
+    top: 0;
+	color: white;
+}
+#ostonappi-upgrade-image img {
+	font-size: 20px;
+	height: 20px;
+	width: 20px;
+	float: right;
+}
+#ostettuUpgrade img {
+	height: 10px;
+	width: 10px;
+}
+.click-numero {
+	text-shadow: 0 0 16px black,
+				 0 0 16px black;
+}
+#innerUhkapelaus {
+	position: relative;
+	width: 100%;
+	display: none;
+	outline: solid black 2px;
+}
+.uhkapelausnapit {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: relative;
+	color: white;
+	text-align: center;
+	float: left;
+}
+#voitot {
+	max-height: 140px;
+	float: left;
+	position: relative;
+	overflow-y: scroll;
+	color: white;
+}
+#tulos {
+	text-align: left;
+	color: white;
+	position: relative;
+}
+.click-kuva {
+	height: 10px;
+	width: 10px;
+	background-image: url("images/kolikko-1.png");
+}
+#huijaus {
+	color: white;
+	position: relative;
+	height: 0px;
+	visibility: hidden;
+	height: 0px;
+}
+#innerHuijaus {
+	position: relative;
+	display: none;
+	height: 0px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	outline: solid black 2px;
+}
+#essential {
+	visibility: hidden;
+	height: 0px;
+}
+#sectionLeftRight {
+	left: 61.25%;
+	position: absolute;
+	width: 15%;
+	height: 100%;
+	color: white;
+}
+#credits {
+	font-size: 12px;
+}
+#menu {
+	display: none;
+	height: 0px;
+	background-color: rgba(0, 0, 0, 0.5);
+	outline: solid black 2px;
+}
+#version {
+	font-size: 10px;
+}
+.leftButton {
+	position: absolute;
+	padding-top: 4px;
+	left: 160px;
+	border: none;
+	background: none;
+	color: white;
+	text-shadow: 0px 0px 8px black, 
+				 0px 0px 8px black,
+				 0px 0px 8px black,
+				 0px 0px 8px black, 
+				 0px 0px 12px black,
+				 0px 0px 12px black,
+				 0px 0px 12px black, 
+				 0px 0px 12px black, 
+				 0px 0px 2px black, 
+				 0px 0px 2px black;
+	width: auto;
+}
+.pm {
+	position: relative;
+	border: none;
+	background: none;
+	color: white;
+	text-shadow: 0px 0px 8px black, 
+				 0px 0px 8px black,
+				 0px 0px 8px black,
+				 0px 0px 8px black, 
+				 0px 0px 12px black,
+				 0px 0px 12px black,
+				 0px 0px 12px black, 
+				 0px 0px 12px black, 
+				 0px 0px 2px black, 
+				 0px 0px 2px black;
+	float: right;
+	min-width: 80px;
+}	
+.pm2 {
+	/*position: absolute;
+	right: 80px;
+	top: 60px;
+	width: 70px;*/
+	margin: 0px 0px 3px 15px;
+	border: none;
+	background: none;
+	color: white;
+	text-shadow: 0px 0px 8px black, 
+				 0px 0px 8px black,
+				 0px 0px 8px black,
+				 0px 0px 8px black, 
+				 0px 0px 12px black,
+				 0px 0px 12px black,
+				 0px 0px 12px black, 
+				 0px 0px 12px black, 
+				 0px 0px 2px black, 
+				 0px 0px 2px black;
+}
+.pm3 {
+	float: right;
+	position: relative;
+	width: 10%;
+	height: 80px;
+}
+.leftButton:hover {
+	transform: scale(1.1);
+}
+.leftButton:active {
+	transform: scale(1.05);
+}
+.pm:hover {
+	transform: scale(1.1);
+}
+.pm:active {
+	transform: scale(1.05);
+}
+.pm2:hover {
+	transform: scale(1.1);
+}
+.pm2:active {
+	transform: scale(1.05);
+}
+.menuText {
+	color: white;
+	font-size: 20px;
+	text-shadow: 0px 0px 8px black, 
+				 0px 0px 8px black, 
+				 0px 0px 12px black,
+				  0px 0px 12px black,
+				   0px 0px 12px black, 
+				   0px 0px 12px black, 
+				   0px 0px 2px black, 
+				   0px 0px 2px black;
+}
+.leftText {
+	color: white;
+	font-size: 20px;
+	text-shadow: 0px 0px 8px black, 
+				 0px 0px 8px black, 
+				 0px 0px 12px black,
+				  0px 0px 12px black,
+				   0px 0px 12px black, 
+				   0px 0px 12px black, 
+				   0px 0px 2px black, 
+				   0px 0px 2px black;
+	width: 250px;
+}
+.restartButton {
+	color: red;
+}
+#myInput {
+	width: 130px;
+}
+.avausnappi3 {
+	padding-left: 100px;
+}
+#sectionLeftLeft {
+	float: left;
+	height: 100%;
+	width: 29.6%;
+}
+#patchnotes {
+	color: white;
+	font-size: 15px;
+	text-shadow: 0px 0px 8px black, 
+				 0px 0px 8px black, 
+				 0px 0px 12px black,
+				  0px 0px 12px black,
+				   0px 0px 12px black, 
+				   0px 0px 12px black, 
+				   0px 0px 2px black, 
+				   0px 0px 2px black;
+	position: absolute;
+	bottom: 10px;
+	width: 22%;
+}
+#notes {
+	position: relative;
+	height: 0px;
+	display: none;
+	overflow-y: scroll;
+	margin-left: 4%;
+	bottom: 0px;
+	background-color: rgba(0, 0, 0, 0.5);
+	outline: solid black 2px;
+}
+#courseStyle {
+	color: white;
+	text-shadow: 0 0 5px black;
+}
+#yritysUpgradeContainer {
+	width: 303px;
+	height: 0px;
+	display: none;
+	outline: solid black 1px;
+	background-color: #3a3939;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	box-shadow: 0px 0px 8px 4px #000000,
+				0px 0px 10px white inset;
+	padding: 2px 2px 2px 2px;
+}
+.yritysUpgrade {
+	float: left;
+	color: black;
+	outline: solid black 1px;
+	text-shadow: 0px 0px 6px black;
+	background-image: url("images/background-10.png");
+	background-size: cover;
+	background-color: white;
+	height: 50px;
+	margin: 2px;
+}
+.yritysUpgrade:hover {
+	box-shadow: 0 0 20px white inset;
+}
+.solidYritysUpgrade {
+	width: 147px;
+}
+.solidYritysUpgradeUnaffordable {
+	width: 147px;
+	opacity: 0.6;
+}
+.solidScalingYritysUpgrade {
+	width: 147px;
+}
+.solidScalingYritysUpgradeUnaffordable {
+	width: 147px;
+	opacity: 0.6;
+}
+.synergyYritysUpgrade {
+	width: 299px;
+}
+.synergyYritysUpgradeUnaffordable {
+	width: 299px;
+	opacity: 0.6;
+}
+.yritysUpgradeName {
+	float: left;
+	padding-left: 10px;
+}
+.yritysUpgradePrice {
+	float: left;
+	padding-left: 10px;
+}
+.yritysUpgradeAmount {
+	float: left;
+	padding-left: 10px;
+}
+.yritysUpgradeFactor {
+	float: left;
+	padding-left: 10px;
+}
+#infoCard {
+	position: absolute;
+	top: 200px;
+	outline: solid black 3px;
+	width: 221px;
+	height: auto;
+	min-height: 100px;
+	max-height: 400px;
+	box-shadow: 0px 0px 8px 4px #000000,
+				0px 0px 10px black inset;
+	background-color: black;
+	color: white;
+	background-image: url("images/background-9.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	visibility: hidden;
+}
+#textField {
+	font-family: Papyrus, fantasy;
+	position: relative;
+	text-align: center;
+	padding: 10px;
+	text-shadow: 0px 0px 8px black, 
+				 0px 0px 8px black,
+				 0px 0px 8px black,
+				 0px 0px 8px black, 
+				 0px 0px 12px black,
+				 0px 0px 12px black,
+				 0px 0px 12px black, 
+				 0px 0px 12px black, 
+				 0px 0px 2px black, 
+				 0px 0px 2px black;
+	/**/
+}
+.infoCardBuildingName {
+	text-align: center;
+	float: left;
+	width: 90%;
+	height: 20px;
+	margin-left: 5%;
+	margin-top: -25px;
+	padding: 1px;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+}
+.infoCardProduction {
+	font-size: 12px;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+	text-align: center;
+	margin: 10px;
+}
+#laina {
+	width: 100%;
+	display: none;
+	position: relative;
+	color: white;
+	float: left;
+	text-shadow: 0px 0px 8px black, 
+				 0px 0px 8px black,
+				 0px 0px 8px black,
+				 0px 0px 8px black, 
+				 0px 0px 12px black,
+				 0px 0px 12px black,
+				 0px 0px 12px black, 
+				 0px 0px 12px black, 
+				 0px 0px 2px black, 
+				 0px 0px 2px black;
+	height: auto;
+}
+#innerLaina {
+	position: relative;
+	display: none;
+	height: 0px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	outline: solid black 2px;
+}
+#muutos {
+	position: absolute;
+	color: white;
+	float: right;
+}
+.lainaHäviävä {
+	visibility: visible;
+	height: auto;
+}
+#ascendTracker {
+	text-align: center;
+	position: relative;
+	width: 100%;
+	height: 50px;
+}
+#outerProgressBar {
+	position: relative;
+	top: 1px;
+	width: 73%;
+	height: 1.3%;
+	outline: solid white 2px;
+	float: left;
+}
+#innerProgressBar {
+	margin: 1%;
+	width: 0%;
+	height: 80%;
+	background-image: url("images/background-3.png");
+	outline: solid black 2px;
+}
+#outerAscendTrackerPercentage {
+	font-size: 13px;
+	top: 0;
+	left: 180px;
+	position: absolute;
+	width: 15px;
+}
+#ascensionReward {
+	width: 18px;
+	font-size: 13px;
+	top: -2px;
+	left: 10px;
+	position: absolute;
+	text-shadow: 0px 0px 8px black, 
+				 0px 0px 8px black, 
+				 0px 0px 12px black,
+				 0px 0px 12px black,
+				 0px 0px 12px black, 
+				 0px 0px 12px black, 
+				 0px 0px 2px black, 
+				 0px 0px 8px black, 
+				 0px 0px 8px black, 
+				 0px 0px 12px black,
+				 0px 0px 12px black,
+				 0px 0px 12px black, 
+				 0px 0px 12px black, 
+				 0px 0px 2px black,
+				 0px 0px 2px black;
+}
+#ascensionReward:hover {
+	font-size: 20px;
+}
+#unit {
+	font-size: 12px;
+}
+#veroProsenttiStyle {
+	color: rgba(255, 0, 0, 0.2);
+	text-shadow: 0 0 4px black;
+}
+#ascensionUpgrades {
+	visibility: hidden;
+	position: relative;
+	width: 50%;
+    height: 0%;
+    float: right;
+    right: 20%;
+    margin: auto;
+	outline: solid black 3px;
+	background-image: url("images/background-11.png");
+	background-size: 100% 100%;
+	box-shadow: 0px 0px 150px black inset,
+				0px 0px 150px black inset,
+				0px 0px 150px black inset,
+				0px 0px 150px black inset;
+}
+#innerAscensionUpgrades {
+	display: block;
+	position: relative;
+	margin-top: 8%;
+	height: 92%;
+	width: 90%;
+	left: 5%;
+}
+#ascensionUpgradesButton {
+	height: 30px;
+}
+#closeAscensionUpgradesButton {
+	position: absolute;
+	color: white;
+	float: right;
+	height: 20px;
+	width: 20px;
+	margin-top: -6%;
+	background-color: red;
+}
+.ascendUpgrade {
+	color: white;
+	position: relative;
+	float: left;
+	width: 90%;
+	margin-left: 5%;
+	background-color: rgba(0, 0, 0, 0.7);
+	outline: solid white 1px;
+	margin: 1px 1px 3px 18px;
+	text-shadow: 0px 0px 8px black, 
+	0px 0px 8px black, 
+	0px 0px 12px black,
+	0px 0px 12px black,
+	0px 0px 2px black, 
+	0px 0px 8px black, 
+	0px 0px 8px black, 
+	0px 0px 12px black,
+	0px 0px 12px black,
+	0px 0px 2px black,
+	0px 0px 2px black;
+}
+
+#ascensionLocked {
+	display: none;
+}
+#ascensionCurrency {
+	position: absolute;
+	top: -5%;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	width: 100%;
+	height: 5%;
+}
+.ascensionUpgradeContainer {
+	position: relative;
+	float: left;
+	width: 48%;
+	margin: 1%;
+	min-height: 20px;
+	height: auto;
+}
+.ascensionUpgradeContainerTitle {
+	outline: solid white 2px;
+	color: white;
+	width: 100%;
+	text-align: center;
+	margin: 5px;
+	font-weight: bold;
+	background-color: rgba(0, 0, 0, 0.7);
+	text-shadow: 0px 0px 8px black, 
+				0px 0px 8px black, 
+				0px 0px 12px black,
+				0px 0px 12px black,
+				0px 0px 12px black, 
+				0px 0px 12px black, 
+				0px 0px 2px black, 
+				0px 0px 8px black, 
+				0px 0px 8px black, 
+				0px 0px 12px black,
+				0px 0px 12px black,
+				0px 0px 12px black, 
+				0px 0px 12px black, 
+				0px 0px 2px black,
+				0px 0px 2px black;
+}
+.ascendUpgradeCost {
+	position: relative;
+	float: right;
+	width: 50%;
+}
+.ascendUpgradeName {
+	position: relative;
+	float: left;
+	width: 50%;
+	font-weight: bold;
+}
+.ascendUpgradeAmount {
+	outline: solid white 1px;
+	height: 20px;
+	width: 20px;
+}
+#outerYritysUpgradeAvausNappi {
+	visibility: hidden;
+	height: 0px;
+}
+#reloadButton2 {
+	text-align: center;
+	font-size: 30px;
+	position: absolute;
+	top: -41px;
+	left: 90.2%;
+	color: white;
+	background: transparent;
+	border: none;
+}
+#reloadButton2:hover {
+	text-shadow: 0 0 3px white;
+	transform: scale(1.05);
+}
+#confirmCard {
+	display: none;
+	z-index: 99;
+	left: 24%;
+	top: 25%;
+	height: 250px;
+	width: 300px;
+	outline: solid white 1px;
+	position: absolute;
+	background-color: black;
+	background-image: url("images/background-15.png");
+	background-size: 100% 100%;
+}
+#confirmText {
+	height: 61%;
+	width: auto;
+	margin: 10% 10% 0 10%;
+	color: white;
+}
+#confirmButton {
+	width: 90%;
+	float: left;
+	margin: 0 0 0 5%;
+}
+#confirmButton:hover {
+	box-shadow: 0 0 10px white inset;
+}
+#innerConfirmButton:hover {
+	text-shadow: 0 0 12px white;
+}
+#innerConfirmButton {
+	width: 100%;
+	border: none;
+	background: transparent;
+	outline: solid white 1px;
+	color: white;
+}
+#cancelButton {
+	height: 25px;
+	width: 25px;
+	color: white;
+	background-color: red;
+	border: none;
+	outline: solid white 1px;
+	float: right;
+}
+#outerUhkapelaus {
+	display: none;
+	position: relative;
+	height: auto;
+}
+#events {
+	width: 100%;
+	display: none;
+	position: relative;
+	color: white;
+	float: left;
+	text-shadow: 0px 0px 8px black, 
+				 0px 0px 8px black,
+				 0px 0px 8px black,
+				 0px 0px 8px black, 
+				 0px 0px 12px black,
+				 0px 0px 12px black,
+				 0px 0px 12px black, 
+				 0px 0px 12px black, 
+				 0px 0px 2px black, 
+				 0px 0px 2px black;
+}
+#innerEvents {
+	position: relative;
+	display: none;
+	height: 0px;
+	width: 100%;
+}
+#eventsTitle {
+	width: auto;
+	height: auto;
+	text-align: center;
+	font-weight: bold;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+#eventsUpgradeContainer {
+	min-height: 150px;
+	background-color: rgba(0, 0, 0, 0.5);
+	outline: solid black 2px;
+	overFlow-x: hidden;
+	overFlow-y: scroll;
+}
+.eventsUpgrade {
+	position: relative;
+	width: 90%;
+	height: 56px;
+	margin: 2px 2px 10px 5%;
+	outline: solid white 1px;
+}
+.eventsUpgrade:hover {
+	box-shadow: 0 0 10px white;
+}
+.eventsUpgrade-unaffordable {
+	opacity: 0.6;
+}
+.eventsUpgrade-active {
+	box-shadow: 0 0 20px white;
+}
+.eventsUpgrade:active {
+	box-shadow: 0 0 10px white inset;
+}
+.eventsUpgradeName {
+	float: left;
+	width: 100%;
+	text-align: center;
+	outline: solid white 1px;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.eventsUpgradeCost {
+	height: 70%;
+	width: 33.3%;
+	float: left;
+	font-size: 18px;
+	text-align: center;
+	outline: solid white 1px;
+	background-color: rgba(0, 0, 0, 0.6);
+
+}
+.eventsUpgradeBonus {
+	height: 70%;
+	width: 33.3%;
+	float: left;
+	font-size: 30px;
+	text-align: center;
+	outline: solid white 1px;
+	background-color: rgba(0, 0, 0, 0.6);
+
+}
+.eventsUpgradeDuration {
+	height: 70%;
+	width: 33.3%;
+	float: left;
+	font-size: 30px;
+	text-align: center;
+	outline: solid white 1px;
+	background-color: rgba(0, 0, 0, 0.6);
+
+}
+.innerEventsUpgradeUnlock {
+	width: 100%;
+	height: 100%;
+}
+.eventsUpgradeUnlockText{
+	position: relative;
+	float: right;
+	margin: 7% 5% 0 0;
+}
+.eventsUpgradeUnlockFont {
+	position: relative;
+	float: left;
+	font-size: 25px;
+	margin: 5% 0 0 3%;
+}
+
+#buyTypeContainer {
+	position: relative;
+	float: right;
+	width: 30%;
+	margin-right: 30%;
+}
+.buyTypeButton {
+	text-shadow: 0 0 12px black,
+				 0 0 12px black,
+				 0 0 12px black,
+				 0 0 12px black;
+	color: white;
+	border: none;
+	background: transparent;
+	margin: 3%;
+	font-size: 18px;
+}
+.buyTypeButton:active {
+	transform: scale(0.95);
+}
+
+.sectionRightHeader {
+	margin: 5% 5% 5% 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+#buyTypeButtonPlus:hover {
+	text-shadow: 0 0 1px green,
+				 0 0 2px green,
+				 0 0 3px green,
+				 0 0 4px green;
+}
+#buyTypeButtonMinus:hover {
+	text-shadow: 0 0 1px red,
+				 0 0 2px red,
+				 0 0 3px red,
+				 0 0 4px red;
+}
+#scoreContainer1 {
+	position: relative;
+	width: 100%;
+	margin-left: 6%;
+}
+#scoreContainer2 {
+	position: relative;
+	width: 100%;
+	margin-left: 11%;
+}
+#comboContainer {
+	font-size: 35px;
+	color: white;
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 30px;
+	margin-top: 60px;
+	opacity: 0;
+}
+#combo {
+	float: left;
+	margin-left: 35%;
+	text-align: right;
+}
+#comboMultiplier {
+	float: right;
+	margin-right: 35%;
+}

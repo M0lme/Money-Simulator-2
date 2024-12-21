@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+	<!--<div><span id="buttonId"><button onClick="display.show(height,id,buttonId,classList,name);" class="classList"><span class="menuText">NIMI</span>[+]</button></span></div>-->
+	<head>
+		<link rel="stylesheet" href="main.css">
+		<title>Money Simulator 2</title>
+	<head>
+
+	<body id="body">
+		<span id="dummy"></span>
+		<div id="sectionLeft">
+			<div id="ascensionUpgrades"><div id="innerAscensionUpgrades">
+				<div id="ascensionUpgradeContainerTax" class="ascensionUpgradeContainer"></div>
+				<div id="ascensionUpgradeContainerUnlock" class="ascensionUpgradeContainer"></div>
+				<div id="ascensionUpgradeContainerIncome" class="ascensionUpgradeContainer"></div>
+				<div id="ascensionUpgradeContainerClicking" class="ascensionUpgradeContainer"></div>
+				<div id="ascensionUpgradeContainerMisc" class="ascensionUpgradeContainer"></div>
+			</div></div>
+			<div id="innerSectionLeft">
+	
+				<div id="confirmCard"><button id="cancelButton" onClick="confirmCard('off')">╳</button><br><div id="confirmText"></div><br><div id="confirmButton"></div></div>
+
+
+				<div id="otsikkoContainer">
+					<button id="reloadButton2" onClick="reload()">↻</button>
+
+					<h1 id="otsikko">Money Simulator 2 <span id="version">0.000</span></h1>
+					<h2 id="credits">by Molme</h2>
+					<h3 id="alaotsikko">Money Simulator 1 coming soon...</h3>
+				</div>
+			
+				<div id="scoreContainer">
+					<p id="scoreContainer1"><span id="unit">money: </span> <span id="game.score">0</span> <span id="courseStyle" onmouseover="infoCard(-2, 'course');" onmouseout="infoCard(-2, 'off');"><span id="coursePrefix"></span><span id="course">0</span>%</span><span id="muutos"></span></p>
+					<p id="scoreContainer2"><span id="game.scorePerSecond" onmouseover="infoCard(-2, 'off')">0</span> /s <span  onmouseover="infoCard(-2, 'veroProsentti');" onmouseout="infoCard(-2, 'off');" id="veroProsenttiStyle">-<span id="veroprosentti"></span>%</span></p>
+				</div>
+
+				<div draggable="false" id="clicker"></div>
+				<div id="comboContainer" class="menuText"><div id="combo">0</div><div id="comboMultiplier">0x</div></div>
+			</div>
+
+			<div id="sectionLeftLeft">
+				<diV id="huijaus">
+					<div><span class="menuText">Cheat </span><span id="huijausAvausNappi"><button onClick="display.show(0, 'auto','innerHuijaus','huijausAvausNappi','leftButton');" class="leftButton">[+]</button></span></div>
+					<div id="innerHuijaus">
+						<button onClick="cheat.switch();">↓</button><button onClick="cheat.add();">[+]</button><button onClick="cheat.deduct();">[-]</button><br>
+						<button onClick="cheat.cheat();">Cheat</button><br>
+						<button onClick="cheat.reverseCheat();">money to 0</button><br>
+							<div><div id="rahaClicked">0</div>
+							<div id="topScore">0</div></div>
+					</div>
+				</diV>
+				
+				<div id="outerUhkapelaus">
+					<div class="menuText">Gambling <span id="uhkapelausAvausNappi"><button onClick="display.show(1, '230px', 'innerUhkapelaus', 'uhkapelausAvausNappi', 'leftButton');" class="leftButton">[+18]</button></span></div>					
+					<div id="innerUhkapelaus">
+						<div class="uhkapelausnapit">
+							<P>Gambling</P>
+							profits  <span id="profit">0</span>
+								<br>
+							<button onClick="uhkapelaus.kasvataFactor()">+</button>
+							multiplier <span id="factor">10</span>x, <button onClick="uhkapelaus.vähennäFactor()">-</button>
+								<br><br>
+							chances 1/<span id="factor2">10</span>
+								<br><br>
+							<button onClick="uhkapelaus.allIn()">ALL INNN</button>
+							<button onClick="uhkapelaus.allOut()">ALL OUTT</button>
+								<br><br>
+							<button onClick="uhkapelaus.kasvataBet()">+</button>
+							<span id="bet">1000</span>
+							<button onClick="uhkapelaus.vähennäBet()">-</button>
+								<br><br>
+							<button onClick="uhkapelaus.pelaa()">play</button>
+								<br>
+								<br>
+							<span id="tulos">outcome</span>
+								<br>
+								<br>
+							<span id="voitot"></span>
+						</div>
+					</div>
+				</diV>
+
+				<div id="events" onmouseout="infoCard(-1, 'off')">
+					<div class="menuText">Events <span id="eventsAvausNappi"><button onClick="display.show(2, 'auto','innerEvents','eventsAvausNappi','leftButton');" class="leftButton">[+]</button></span></div>
+					<div id="innerEvents">
+						<p id="eventsTitle">Events</p>
+						<div id="eventsUpgradeContainer"></div>
+					</div>
+				</div>
+
+				<div id="laina">
+					<div class="menuText">Bank <span id="lainaAvausNappi"><button onClick="display.show(3, 'auto','innerLaina','lainaAvausNappi','leftButton');" class="leftButton">[+]</button></span></div>
+					<div id="innerLaina">
+						<button onClick="laina.muutaLaina('max')">max</button><button onClick="laina.muutaLaina('+')">[+]</button><span id="laina-amount">0</span><button onClick="laina.muutaLaina('-')">[-]</button><button onClick="laina.muutaLaina('min')">min</button><br>
+						<span id="laina-jäljellä">30 minutes</span> <br>
+						<span id="lainanOtto">
+							<input type="radio" id="valitseMuuttuva" value="valittuMuuttuva" name="korkoMuoto">
+							<label for="valitseMuuttuva">In accordance to the Currency Exchange</label><br>
+							<input type="radio" id="valitseKiinteä" value="valittuKiinteä" name="korkoMuoto">
+							<label for="valitseKiinteä">Solid</label><br>
+							<button onClick="confirmCard('laina');" id="lainaNappi">Take loan</button><br>
+						</span>
+					</div>
+				</div>
+
+				<div id="patchnotes">
+					<div id="notes">
+						v. 1.000 <br>
+						- Muokattu Menu-näkymää siistimmäksi <br>
+						- Siirretty nappeja valikkoon <br>
+						- Lisätty lisää päivityksiä <br>
+						- Lisätty valikkoon nappi, joka automaattisesti syöttää kirjoitusalueen arvon <br>
+						- Lisätty salaista sisältöä <br>
+						- Korjattu uhkapelaus-alueen ostonappi ja muokattu sitä siistimmäksi <br>
+						- Lisätty kehitysmahdollisuuksia viimeisen rakennuksen jälkeen <br> 
+						- Lisätty infolaatikko <br>
+						- Lisätty mahdollisuus ottaa lainaa <br>
+						- Language changed to English <br>
+						- Added balancing <br>
+						- Added a ton of front-end mechanics <br>
+					</div>
+					<div><span class="menuText">Change log </span><span id="notesAvausNappi"><button onClick="display.show(4, '300px','notes','notesAvausNappi','leftButton');" class="leftButton">[+]</button></span></div>
+				</div>
+			</div>
+		</div>
+
+		<diV id="sectionLeftRight">
+			<div id="outerProgressBar"><div id="innerProgressBar"></div><span id="ascensionReward" onClick="confirmCard('ascend')" onmouseover="infoCard(-2, 'ascend')" onmouseout="infoCard(-2, 'off');">0</span><span id="outerAscendTrackerPercentage"><span id="ascendTrackerPercentage">0</span>%</span></div><br>
+
+			<div><span class="menuText" id="menuHead">MENU </span><span id="menuAvausNappi"><button onClick="display.show(-1, 'auto','menu','menuAvausNappi','pm2');" class="pm2">[+]</button></span></div>
+			<div id="menu">
+				<div class="napukat">
+					<input type="text" id="myInput" /><button onClick="reload();" id="reloadButton" class="pm">[↵]</button>
+					<span class="leftText" id="saving">Save</span><span class="pm"><button onClick="saveGame();" class="pm">[<span id="saved">X</span>]</button></span><br>
+					<span class="leftText">Restart</span><span class="pm"><button onClick="resetGame();" class="pm restartButton">[🛇]</button></span><br>
+				</div>
+			</div>
+			<div id="infoCard"><span id="textField"></span></div>
+		</diV>
+
+		<div id="sectionRight">
+			<div id="innerSectionRight">
+				<span id="ascensionUpgradesButton" class="ascensionLocked">
+					<div class="sectionRightOtsikot"><span class="menuText">Ascension </span><span id="ascensionUpgradeAvausNappi"><button onClick="display.toggle('ascensionUpgrades','100%'); display.toggle('innerSectionLeft','0')" class="pm2">[+]</button></span></div><br>
+				</span>
+				<div class="sectionRightOtsikot">Upgrades</div>
+				<div id="upgradeContainer" onmouseover="display.toggleUpgrade('show');" onmouseout="infoCard(-2, 'off'); display.toggleUpgrade('hide');"></div>
+
+				<div class="sectionRightOtsikot" id="producersHeader">Producers <div id="buyTypeContainer"><button id="buyTypeButtonPlus" class="buyTypeButton" onClick="building.switch('purchase')">[+]</button><button id="buyTypeButtonMinus" class="buyTypeButton" onClick="building.switch('sell')">[-]</button></div></div>
+				<div id="shopContainer" onmouseout="infoCard(-2, 'off');"></div>
+				<div id="outerYritysUpgradeAvausNappi" class="sectionRightOtsikot"><span  class="leftText">Business Upgrades</span><span id="yritysUpgradeAvausNappi"><button onClick="display.show(-1, '350px','yritysUpgradeContainer','yritysUpgradeAvausNappi','pm');" class="pm">[+]</button></span></div>
+				<br><div id="yritysUpgradeContainer" onmouseout="infoCard(-2, 'off');"></div>
+			</div>
+		</div>
+		<embed type="text" src="patchnotes.txt" id="patchNotesEmbed">
+
+	</body>
+
+<script src="main.js"></script>
+
+</html>

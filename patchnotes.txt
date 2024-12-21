@@ -1,0 +1,14 @@
+v. 1.000
+- Muokattu Menu-näkymää siistimmäksi
+- Siirretty nappeja valikkoon
+- Lisätty lisää päivityksiä
+- Lisätty valikkoon nappi, joka automaattisesti syöttää kirjoitusalueen arvon
+- Lisätty salaista sisältöä
+- Korjattu uhkapelaus-alueen ostonappi ja muokattu sitä siistimmäksi
+- Lisätty kehitysmahdollisuuksia viimeisen rakennuksen jälkeen
+- Lisätty infolaatikko
+- Lisätty mahdollisuus ottaa lainaa
+- Language changed to English
+- Added balancing
+- Added a ton of front-end mechanics
+- Added a Clicking combo mechanic
